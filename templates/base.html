@@ -1,0 +1,15 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+    {% block main_title %}
+    {% endblock %} - Regressus
+{% endblock %}
+{% block navbar %}
+    {% include "resources/navbar.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% block page_content %}{% endblock %}
+    </div>
+{% endblock %}
